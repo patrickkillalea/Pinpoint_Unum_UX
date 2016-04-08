@@ -1,0 +1,345 @@
+@import url("MyFontsWebfontsKit.css");
+
+body {
+	background: #232B38;
+	color: #fff;
+}
+.dax {
+	font-family: 'FFDaxWebProWideRegular';
+}
+.left-col {
+	background: #393F4F;
+	padding-top: 20px;
+}
+.content {
+	position: relative;
+	z-index: 1;
+}
+
+/* HEADER, LOGO AND NAVIGATION */
+.header {
+	background: #393F4F;
+	box-shadow: 0 2px 20px #111;
+	height: 80px;
+	position: relative;
+	z-index: 9;
+}
+.header a {
+	color: #717883;
+	text-decoration: none;
+	outline: 0;
+}
+.header a:hover, .header li.active a {
+	color: #fff;
+}
+.logo {
+	margin: 17px 10px 0 0;
+}
+.title {
+	border-left: 2px solid #fff;
+	color: #fff;
+	font-size: 26px;
+	margin-top: 16px;
+	padding: 6px 0 0 10px;
+}
+.header ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+.header ul li {
+	float: left;
+}
+.header .user {
+	overflow: hidden;
+	margin-top: 10px;
+}
+.header .user ul li a {
+	padding: 0 10px;
+	border-left: 1px solid #717883;
+}
+.header .user ul > li:first-child a {
+	border: none;
+}
+.header .main-nav ul {
+	margin: 23px 15px 0 0;
+}
+.header .main-nav ul li {
+	position: relative;
+}
+.header .main-nav ul li a {
+	padding: 0 15px;
+	font-size: 15px;
+}
+.header .main-nav ul li .counter {
+	background: #D04F4F;
+	position: absolute;
+	top: -13px;
+	right: 0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 10px;
+	padding: 2px 6px 2px;
+	border-radius: 10px;
+	line-height: 1;
+}
+.header .main-nav ul li .counter-feedback {
+	background: #81B245;
+}
+
+/* TOP BAR WITH TITLE AND SEARCH FORM */
+.top-bar {
+	margin-top: 20px;
+}
+.top-bar-form input {
+	background: #232B38;
+	border: 1px solid #AAB0C0;
+	height: 34px;
+	padding: 4px 10px;
+	width: 300px;
+}
+.top-bar-form button[type="submit"] {
+	background: #AAB0C0;
+	border: 1px solid #AAB0C0;
+	height: 34px;
+	width: 80px;
+	font-weight: bold;
+	margin-left: -5px;
+}
+.top-bar-form button[type="button"] {
+	padding: 3px 20px 2px;
+	margin: 3px 10px 0 0;
+	font-weight: bold;
+	font-size: 13px;
+}
+.page-title {
+	font-size: 22px;
+}
+
+/* ITEMS LIST */
+.items-list {
+	margin-top: 20px;
+}
+.item {
+	margin-bottom: 10px;
+}
+.item .item-top, .item .item-bottom {
+	padding: 7px 15px;
+	border-left: 10px solid #5C616E;
+}
+.item-top {
+	background: #535C70;
+	font-weight: bold;
+	padding-right: 50px;
+	position: relative;
+}
+.item-top .fa {
+	position: absolute;
+	right: 15px;
+	top: 8px;
+	font-size: 18px;
+	color: #AAB0C0
+}
+.item-bottom {
+	background: #393F4F;
+}
+.item.state-good .item-top, .item.state-good .item-bottom {
+	border-color: #81B245;
+}
+.item.state-good .item-top .fa {
+	color: #81B245;
+}
+.item.state-bad .item-top, .item.state-bad .item-bottom {
+	border-color: #d04f4f;
+}
+.item.state-bad .item-top .fa {
+	color: #d04f4f;
+}
+.item.state-added .item-top, .item.state-added .item-bottom {
+	border-color: #3edde3;
+}
+.item.state-added .item-top .fa {
+	color: #3edde3;
+}
+.item.state-locked .item-top, .item.state-locked .item-bottom {
+	border-color: #059ca2;
+}
+.item.state-locked .item-top .fa {
+	color: #059ca2;
+}
+.item.state-other .item-top, .item.state-other .item-bottom {
+	border-color: #5b606d;
+}
+.item.state-other .item-top .fa {
+	color: #5b606d;
+}
+
+
+
+/* LEFT COLUMNT FILTERS */
+.filters {
+	margin-top: 10px;
+}
+.filter {
+	background: #535c70;
+	margin-bottom: 10px;
+	cursor: pointer;
+	position: relative;
+	padding-left: 50px;
+}
+.filter .filter-icon, .filter .filter-name {
+	display: inline-block;
+	padding: 10px;
+}
+.filter .filter-icon span, .filter .filter-name span {
+	margin-left: 20px;
+}
+.filter .filter-icon {
+	background: #5B606D;
+	padding: 7px 10px 0;
+	color: #3B4251;
+	font-size: 19px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	width: 45px;
+	text-align: center;
+}
+.filter.status-bad .filter-icon {
+	background: #D04F4F;
+	color: #814040;
+}
+.filter.status-good .filter-icon {
+	background: #81B245;
+	color: #59723C;
+}
+.filter.status-added .filter-icon {
+	background: #3EDDE3;
+	color: #3B8E99;
+}
+.filter.status-locked .filter-icon {
+	background: #059CA2;
+	color: #1E6D78;
+}
+.filter.status-locked .filter-icon .fa-lock {
+	position: absolute;
+	font-size: 12px;
+	top: 7px;
+	right: 7px;
+}
+.filter.active {
+	background: #fff;
+	color: #000;
+	box-shadow: 0 0 5px #333;
+}
+
+/* XTABLE STYLE - TABLE WITH HEADER */
+.xtable {
+	margin-top: 20px;
+}
+.xtable-header {
+	padding: 10px;
+	font-weight: bold;
+	overflow: hidden;
+}
+.xtable-header .fa {
+	margin-right: 10px;
+}
+.xtable-header .open-close {
+    position: relative;
+    cursor: default;
+    font-size: 16px;
+}
+.xtable-header .open-close .fa {
+    position: absolute;
+    right: 0;
+}
+.xtable-header .open-close .fa-angle-down {
+    top: -2px;
+}
+.xtable-header .open-close .fa-angle-up {
+    top: 9px;
+}
+.xtable.inactive .xtable-header .open-close .fa-angle-up {
+    top: -2px;
+}
+.xtable.inactive .xtable-header .open-close .fa-angle-down {
+    top: 9px;
+}
+.xtable-header.primary {
+	background: #059DA3;
+}
+.xtable-table {
+	width: 100%;
+}
+.xtable-table td {
+	padding: 10px;
+	background: #393f4f;
+	border-bottom: 1px solid #535c70;
+}
+.xtable thead td {
+	background: #535c70;
+	font-weight: bold;
+	cursor: default;
+}
+.xtable-table td.actions {
+	width: 75px;
+}
+.xtable-table td.actions .fa {
+	margin-left: 10px;
+	cursor: pointer;
+	color: #747C8C;
+}
+.xtable-table td.actions .fa:hover {
+	color: #F6FAFE;
+}
+.xtable-table tr.locked td {
+	color: #747C8C;
+}
+.xtable-table tr.locked td.actions .fa-lock {
+	color: #D04F4F;
+}
+.xtable-table .sort {
+	position: relative;
+}
+.xtable-table .sort:hover {
+	text-decoration: underline;
+}
+.xtable-table .sort .fa, .xtable-table .sort:hover .fa {
+	color: #747C8C;
+	font-size: 18px;
+	text-decoration: none !important;
+}
+.xtable-table .sort .fa-sort-asc {
+	margin-left: 5px;
+}
+.xtable-table .sort .fa-sort-desc {
+	margin-left: -14px;
+}
+.xtable-table .sort.sort-asc .fa-sort-asc, .xtable-table .sort.sort-desc .fa-sort-desc {
+	color: #F6FAFE;
+}
+.xtable-table tr.add-user-row,.xtable-table tr.add-partner-row {
+	display: none;
+}
+.xtable-table tr.add-user-row.active, .xtable-table tr.add-partner-row.active {
+	display: table-row;
+}
+.xtable tr.row-sub > td {
+	padding: 0;
+	background: #E6EDF3;
+	color: #232B38;
+}
+.xtable-table.clicable > tbody > tr:hover > td {
+	background: #F6FAFE;
+	color: #232B38;
+	cursor: pointer;
+}
+.xtable.inactive .xtable-header {
+	background: #5c616e;
+	color: #232b38;
+}
+.xtable.inactive .xtable-table {
+	display: none;
+}
+

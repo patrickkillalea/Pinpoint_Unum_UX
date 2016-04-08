@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <title>Users - Unum</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container-fluid">
+        <header class="header row">
+            <div class="col-xs-12">
+                <div class="pull-left logo col-md-2 col-xs-2 hidden-xs onHover" style="padding-top: 5px; cursor: pointer" id="home" data-ng-click="home()">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="240.000000pt" height="45.000000pt" viewBox="0 0 1200.000000 200.000000" preserveAspectRatio="xMidYMid meet">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="logo_unum_reverse" fill="#FFFFFF">
+                                <g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" stroke="none">
+                                    <path d="M478 2139 c-225 -33 -395 -265 -359 -488 28 -176 157 -320 324 -361
+                            l47 -12 0 -369 0 -369 60 0 60 0 0 369 0 369 48 12 c210 53 356 271 323 481
+                            -31 190 -182 342 -367 369 -38 5 -71 9 -74 9 -3 -1 -31 -5 -62 -10z m227 -128
+                            c87 -38 149 -118 164 -210 l8 -51 -43 0 c-42 0 -44 1 -54 38 -21 78 -97 151
+                            -157 152 -27 0 -29 4 -38 59 l-7 43 43 -7 c24 -4 62 -15 84 -24z m-375 -138
+                            c0 -5 57 -6 127 -4 147 4 190 -7 234 -56 51 -59 33 -130 -45 -174 -36 -20 -58
+                            -24 -173 -27 l-132 -4 -12 -35 c-8 -24 -21 -39 -42 -48 -18 -7 -35 -11 -39 -9
+                            -5 3 -8 76 -8 163 0 138 2 160 18 173 27 24 72 37 72 21z" />
+                                    <path d="M358 1794 c-14 -4 -18 -17 -18 -60 l0 -54 105 0 c112 0 155 12 175
+                            49 7 15 5 25 -9 43 -18 21 -27 23 -128 25 -59 1 -116 -1 -125 -3z" />
+                                    <path d="M2329 1801 c-33 -33 -38 -75 -14 -120 40 -78 165 -37 165 54 0 48
+                            -44 95 -90 95 -22 0 -41 -9 -61 -29z" />
+                                    <path d="M2979 1801 c-33 -33 -38 -75 -14 -120 40 -78 165 -37 165 54 0 48
+                            -44 95 -90 95 -22 0 -41 -9 -61 -29z" />
+                                    <path d="M3949 1801 c-33 -33 -38 -75 -14 -120 40 -78 165 -37 165 54 0 48
+                            -44 95 -90 95 -22 0 -41 -9 -61 -29z" />
+                                    <path d="M1340 1449 c-14 -6 -37 -22 -52 -36 l-28 -27 0 -338 0 -338 32 0 c47
+                            0 114 37 138 74 11 19 23 54 26 80 l7 46 237 0 c294 0 361 16 454 106 133 129
+                            85 314 -104 403 -53 25 -62 26 -284 29 -189 3 -235 1 -267 -12 -38 -15 -39
+                            -15 -39 4 0 17 -7 20 -47 19 -27 0 -59 -5 -73 -10z m573 -170 c21 -5 53 -24
+                            72 -41 44 -38 46 -74 6 -112 -49 -47 -102 -56 -328 -56 l-203 0 0 89 c0 95 5
+                            105 57 121 41 12 351 12 396 -1z" />
+                                    <path d="M2408 1450 c-47 -14 -90 -52 -109 -96 -17 -37 -20 -80 -26 -343 l-6
+                            -301 29 0 c42 0 127 43 147 74 28 42 35 112 42 404 l7 272 -29 -1 c-15 0 -40
+                            -4 -55 -9z" />
+                                    <path d="M2870 1446 c-158 -34 -251 -94 -296 -191 -22 -46 -24 -62 -24 -227 0
+                            -183 5 -216 43 -257 27 -29 93 -60 129 -61 l27 0 3 226 3 226 38 33 c52 45
+                            112 60 242 60 135 0 195 -16 246 -65 l39 -37 0 -221 0 -222 29 0 c76 0 144 56
+                            168 140 21 73 13 247 -17 342 -36 116 -115 197 -232 238 -80 28 -297 37 -398
+                            16z" />
+                                    <path d="M3675 1446 c-16 -7 -41 -26 -55 -41 l-25 -27 -3 -334 -3 -334 37 0
+                            c52 0 119 35 144 74 11 19 23 54 26 80 l7 46 237 0 c294 0 361 16 454 106 133
+                            129 85 314 -104 403 -53 25 -62 26 -284 29 -189 3 -235 1 -267 -12 -38 -15
+                            -39 -15 -39 4 0 17 -7 20 -47 20 -27 -1 -61 -7 -78 -14z m578 -167 c21 -5 53
+                            -24 72 -41 44 -38 46 -74 6 -112 -49 -47 -102 -56 -328 -56 l-203 0 0 89 c0
+                            95 5 105 57 121 41 12 351 12 396 -1z" />
+                                    <path d="M4928 1445 c-107 -21 -181 -60 -241 -125 -64 -69 -87 -131 -87 -235
+                            0 -104 23 -166 87 -235 97 -105 240 -146 473 -137 195 8 296 43 381 134 66 71
+                            82 120 77 240 -3 82 -8 108 -31 155 -52 106 -154 175 -302 203 -93 18 -266 18
+                            -357 0z m286 -195 c75 -11 157 -50 180 -85 43 -66 17 -155 -62 -210 -43 -30
+                            -45 -30 -199 -33 -125 -3 -165 0 -198 12 -50 20 -88 57 -110 110 -62 147 122
+                            244 389 206z" />
+                                    <path d="M5798 1450 c-47 -14 -90 -52 -109 -96 -17 -37 -20 -80 -26 -343 l-6
+                            -301 29 0 c42 0 127 43 147 74 28 42 35 112 42 404 l7 272 -29 -1 c-15 0 -40
+                            -4 -55 -9z" />
+                                    <path d="M6260 1446 c-158 -34 -251 -94 -296 -191 -22 -46 -24 -62 -24 -227 0
+                            -183 5 -216 43 -257 27 -29 93 -60 129 -61 l27 0 3 226 3 226 38 33 c52 45
+                            112 60 242 60 135 0 195 -16 246 -65 l39 -37 0 -221 0 -222 29 0 c76 0 144 56
+                            168 140 21 73 13 247 -17 342 -36 116 -115 197 -232 238 -80 28 -297 37 -398
+                            16z" />
+                                    <path d="M7085 1441 c-52 -24 -91 -66 -110 -120 -26 -75 -36 -71 175 -71 l190
+                            0 0 -271 0 -272 48 7 c64 8 132 45 160 86 21 31 22 42 22 236 l0 204 53 0
+                            c179 0 295 66 313 178 l7 42 -409 0 c-377 0 -412 -2 -449 -19z" />
+                                    <path d="M296 764 c-246 -59 -347 -231 -214 -364 88 -88 248 -133 468 -133
+                            201 0 336 33 436 105 47 34 94 113 94 157 -1 72 -71 155 -168 198 -60 26 -162
+                            53 -204 53 -26 0 -28 -3 -28 -44 l0 -43 62 -13 c149 -29 238 -86 238 -153 0
+                            -67 -103 -128 -264 -156 -77 -14 -270 -14 -338 0 -224 45 -316 137 -223 225
+                            39 36 110 66 203 84 l62 13 0 43 c0 43 -1 44 -32 43 -18 0 -59 -7 -92 -15z" />
+                                </g>
+                    </svg>
+                </div>
+                <div class="pull-left logo col-md-2 col-xs-2 hidden-lg hidden-md hidden-sm" style="padding-top: 5px; cursor: pointer;" id="Div1" data-ng-click="home()">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50.000000pt" height="100.000000pt" viewBox="0 0 180.000000 10.000000" preserveAspectRatio="xMidYMid meet">
+                        <g id="G1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="G2" fill="#FFFFFF">
+                                <g transform="translate(0.000000,55.000000) scale(0.100000,-0.100000)" stroke="none">
+                                    <path d="M478 2139 c-225 -33 -395 -265 -359 -488 28 -176 157 -320 324 -361
+                            l47 -12 0 -369 0 -369 60 0 60 0 0 369 0 369 48 12 c210 53 356 271 323 481
+                            -31 190 -182 342 -367 369 -38 5 -71 9 -74 9 -3 -1 -31 -5 -62 -10z m227 -128
+                            c87 -38 149 -118 164 -210 l8 -51 -43 0 c-42 0 -44 1 -54 38 -21 78 -97 151
+                            -157 152 -27 0 -29 4 -38 59 l-7 43 43 -7 c24 -4 62 -15 84 -24z m-375 -138
+                            c0 -5 57 -6 127 -4 147 4 190 -7 234 -56 51 -59 33 -130 -45 -174 -36 -20 -58
+                            -24 -173 -27 l-132 -4 -12 -35 c-8 -24 -21 -39 -42 -48 -18 -7 -35 -11 -39 -9
+                            -5 3 -8 76 -8 163 0 138 2 160 18 173 27 24 72 37 72 21z" />
+                                    <path d="M358 1794 c-14 -4 -18 -17 -18 -60 l0 -54 105 0 c112 0 155 12 175
+                            49 7 15 5 25 -9 43 -18 21 -27 23 -128 25 -59 1 -116 -1 -125 -3z" />
+                                    <path d="M296 764 c-246 -59 -347 -231 -214 -364 88 -88 248 -133 468 -133
+                            201 0 336 33 436 105 47 34 94 113 94 157 -1 72 -71 155 -168 198 -60 26 -162
+                            53 -204 53 -26 0 -28 -3 -28 -44 l0 -43 62 -13 c149 -29 238 -86 238 -153 0
+                            -67 -103 -128 -264 -156 -77 -14 -270 -14 -338 0 -224 45 -316 137 -223 225
+                            39 36 110 66 203 84 l62 13 0 43 c0 43 -1 44 -32 43 -18 0 -59 -7 -92 -15z" />
+                                </g>
+                    </svg>
+                </div>
+                <div class="pull-right">
+                    <div class="user">
+                        <ul class="pull-right">
+                            <li><a href="#">Additional Link</a></li>
+                            <li><a href="#">LOGOUT</a></li>
+                        </ul>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="partners.html">Link 1</a></li>
+                            <li class="active"><a href="users.html">Link 2</a></li>
+                            <li>
+                                <a href="audit.html">Link 3</a>
+                                <div class="counter counter-audit">7</div>
+                            </li>
+                            <li>
+                                <a href="feedback.html">Link 4</a>
+                                <div class="counter counter-feedback">34</div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="content row">
+            <section class="col-xs-12">
+                <div class="top-bar row">
+                    <div class="col-xs-5 page-title dax">Title</div>
+                    <div class="col-xs-7 text-right top-bar-form">
+                        <form action="">
+                            <button type="submit" class="pull-right">Search</button>
+                            <input type="text" placeholder="Enter search terms" class="pull-right">
+                        </form>
+                        <button type="button" class="small-primary-button" id="addButton" data-row="user">Button</button>
+                    </div>
+                </div>
+                <article class="row">
+                    <div class="col-sm-8 col-sm-offset-4">
+                        <br>
+                        <div>
+                            <!-- Primary Button -->
+                            <button type="button" class="big-primary-button">Primary</button>
+                            <button type="button" class="med-primary-button">Primary</button>
+                            <button type="button" class="small-primary-button">primary</button>
+                        </div>
+                        <br>
+                        <div>
+                            <!-- Secondary Button -->
+                            <button type="button" class="big-secondary-button">Secondary</button>
+                            <button type="button" class="med-secondary-button">Secondary</button>
+                            <button type="button" class="small-secondary-button">Secondary</button>
+                        </div>
+                    </div>
+                </article>
+                <div class="col-md-12" align="center">
+                    <div style="background-color: red; width:200px; height:200px;margin:40px; display: inline-block;"></div>
+                    <div style="background-color: red; width:200px; height:200px;margin:40px; display: inline-block;"></div>
+                    <div style="background-color: red; width:200px; height:200px;margin:40px; display: inline-block;"></div>
+                    <div style="background-color: red; width:200px; height:200px;margin:40px; display: inline-block;"></div>
+                </div>
+                <article class="row xtable">
+                    <div class="col-xs-12" ng-controller="procCtrl">
+                        <div class="xtable-header primary">
+                            <div class="pull-left"><i class="fa fa-users"></i>Harmony Accounts</div>
+                            <div class="open-close pull-right"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></div>
+                        </div>
+                        <table class="xtable-table clicable">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        Account ID
+                                    </td>
+                                    <td>
+                                        Account Name
+                                    </td>
+                                    <td>
+                                        Account Number
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="x in proc ">
+                                    <td>{{ x['Account Id'] }}</td>
+                                    <td>{{ x['Account Name'] }}</td>
+                                    <td>{{ x['Harmony Account Number'] }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </section>
+    <script src="js/angular.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/Controllers/accountsController.js"></script>
+</body>
+
+</html>
