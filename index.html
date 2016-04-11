@@ -146,16 +146,16 @@
                         <br>
                         <div>
                             <!-- Primary Button -->
-                            <button type="button" class="big-primary-button">Primary</button>
+   <!--                          <button type="button" class="big-primary-button">Primary</button>
                             <button type="button" class="med-primary-button">Primary</button>
-                            <button type="button" class="small-primary-button">primary</button>
+                            <button type="button" class="small-primary-button">primary</button> -->
                         </div>
                         <br>
                         <div>
                             <!-- Secondary Button -->
-                            <button type="button" class="big-secondary-button">Secondary</button>
+                           <!--  <button type="button" class="big-secondary-button">Secondary</button>
                             <button type="button" class="med-secondary-button">Secondary</button>
-                            <button type="button" class="small-secondary-button">Secondary</button>
+                            <button type="button" class="small-secondary-button">Secondary</button> -->
                         </div>
                     </div>
                 </article>
@@ -165,6 +165,36 @@
                     <div style="background-color: red; width:200px; height:200px;margin:40px; display: inline-block;"></div>
                     <div style="background-color: red; width:200px; height:200px;margin:40px; display: inline-block;"></div>
                 </div>
+                <article class="row xtable">
+                    <div class="col-xs-12" ng-controller="accountsCtrl">
+                        <div class="xtable-header primary">
+                            <div class="pull-left"><i class="fa fa-users"></i>Harmony Accounts</div>
+                            <div class="open-close pull-right"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></div>
+                        </div>
+                        <table class="xtable-table clicable">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        Account ID
+                                    </td>
+                                    <td>
+                                        Account Name
+                                    </td>
+                                    <td>
+                                        Account Number
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="x in accounts | limitTo : 10 ">
+                                    <td>{{ x['Account Id'] }}</td>
+                                    <td>{{ x['Account Name'] }}</td>
+                                    <td>{{ x['Harmony Account Number'] }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
                 <article class="row xtable">
                     <div class="col-xs-12" ng-controller="procCtrl">
                         <div class="xtable-header primary">
@@ -186,7 +216,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat="x in proc ">
+                                <tr ng-repeat="x in proc | limitTo : 10 ">
                                     <td>{{ x['Account Id'] }}</td>
                                     <td>{{ x['Account Name'] }}</td>
                                     <td>{{ x['Harmony Account Number'] }}</td>
